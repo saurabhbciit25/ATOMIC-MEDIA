@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About ATOMIC MEDIA</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#2f3131",
+                        "inverse-primary": "#a14000",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "on-primary-fixed": "#351000",
+                        "on-primary-container": "#571f00",
+                        "on-tertiary-container": "#313131",
+                        "inverse-on-surface": "#303030",
+                        "surface-container": "#1f1f1f",
+                        "on-secondary-container": "#b4b5b5",
+                        "on-primary": "#571f00",
+                        "outline-variant": "#5a4136",
+                        "on-secondary-fixed-variant": "#454747",
+                        "surface-tint": "#ffb694",
+                        "on-error": "#690005",
+                        "surface": "#131313",
+                        "primary": "#ffb694",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "primary-fixed-dim": "#ffb694",
+                        "inverse-surface": "#e2e2e2",
+                        "error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "surface-variant": "#353535",
+                        "surface-container-high": "#2a2a2a",
+                        "secondary-container": "#454747",
+                        "error": "#ffb4ab",
+                        "on-primary-fixed-variant": "#7b2f00",
+                        "surface-container-low": "#1b1b1b",
+                        "tertiary-fixed": "#e5e2e1",
+                        "secondary": "#c6c6c7",
+                        "surface-container-highest": "#353535",
+                        "outline": "#a98a7d",
+                        "on-background": "#e2e2e2",
+                        "tertiary-container": "#9a9898",
+                        "tertiary": "#c8c6c5",
+                        "secondary-fixed": "#e2e2e2",
+                        "on-surface-variant": "#e2bfb0",
+                        "on-surface": "#e2e2e2",
+                        "background": "#131313",
+                        "surface-bright": "#393939",
+                        "primary-container": "#ff6a00",
+                        "primary-fixed": "#ffdbcc",
+                        "surface-dim": "#131313",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "on-tertiary": "#313030",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "surface-container-lowest": "#0e0e0e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-tablet": "40px",
+                        "margin-desktop": "80px",
+                        "container-max": "1440px",
+                        "margin-mobile": "24px",
+                        "gutter": "32px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "display-xl": ["Inter"],
+                        "body-lg": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(26, 26, 26, 0.3);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 20px rgba(255, 106, 0, 0.15);
+            border-color: rgba(255, 106, 0, 0.3);
+        }
+        .particle-bg {
+            background-image: radial-gradient(circle at 50% 50%, rgba(255, 106, 0, 0.03) 0%, transparent 50%);
+            background-size: 100vw 100vh;
+            background-attachment: fixed;
+        }
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased relative min-h-screen font-body-md overflow-x-hidden particle-bg">
+<!-- Ambient Particles Canvas (CSS-only approximation) -->
+<div aria-hidden="true" class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+<div class="particle w-[2px] h-[2px] top-[10%] left-[20%]"></div>
+<div class="particle w-1 h-1 top-[30%] left-[80%] bg-primary-container/20"></div>
+<div class="particle w-[2px] h-[2px] top-[60%] left-[40%]"></div>
+<div class="particle w-[2px] h-[2px] top-[80%] left-[10%] bg-primary-container/30"></div>
+<div class="particle w-1 h-1 top-[40%] left-[10%]"></div>
+</div>
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/60 backdrop-blur-md border-b border-white/5 transition-all duration-300 ease-out">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop h-16 max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<img alt="ATOMIC MEDIA Logo" class="h-6 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmqTitjES0zZLF99uCly2Ro-YZ7N5uFOJ4RdPxSMQhrGoTTQ1jfSSGkN9ilyb_K-C5TneXh_wYv6v2i_-t6-sAnF9UW_kDz6ldDbHCcKNyzJQr5AIWvj--LjMYawIZ0TKUzmzPhUrXz89sK9gpDOrqLE6u5iebHnsuBeK3Gj3MEo7kGeeCor-8UZrzU1EhBs32xOzM3q2KSajXJJu7KqBFon9RMkDU916xOt8TqyPPRlgFV4O1NL9--aK9K1tkPIfCboWut92iAGs"/>
+<span class="font-body-md text-[16px] uppercase tracking-[0.2em] text-primary-container font-bold">ATOMIC MEDIA</span>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-body-md text-[12px] uppercase tracking-[0.15em] font-medium text-on-surface-variant hover:text-primary transition-colors duration-300" href="index.html">Home</a>
+<a class="font-body-md text-[12px] uppercase tracking-[0.15em] font-medium text-primary-container border-b border-primary-container pb-0.5" href="about.html">About</a>
+<a class="font-body-md text-[12px] uppercase tracking-[0.15em] font-medium text-on-surface-variant hover:text-primary transition-colors duration-300" href="services.html">Services</a>
+<a class="font-body-md text-[12px] uppercase tracking-[0.15em] font-medium text-on-surface-variant hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
+</div>
+<button class="hidden md:block bg-primary-container/90 text-black font-label-caps text-[10px] px-5 py-2 hover:bg-primary-container transition-all duration-300 tracking-[0.15em] rounded-sm shadow-[0_0_15px_rgba(255,106,0,0.2)] hover:shadow-[0_0_20px_rgba(255,106,0,0.4)]">
+                START PROJECT
+            </button>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-on-background opacity-70 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="relative z-10 pt-28 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Hero Section -->
+<section class="min-h-[60vh] flex flex-col justify-center items-start mb-24 relative">
+<div class="absolute inset-0 z-[-1] opacity-[0.15] bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;q=80')] bg-cover bg-center" data-alt="A cinematic, deep space view of a glowing nebula with subtle neon orange and deep black tones, representing high-tech digital connectivity and atomic energy in a minimalist, premium corporate aesthetic."></div>
+<p class="font-label-caps text-[11px] text-primary-container mb-5 tracking-[0.25em] uppercase font-semibold">The Void / Origins</p>
+<h1 class="font-headline-lg text-[48px] md:text-[64px] text-on-surface mb-6 max-w-4xl leading-[1.1] font-bold tracking-tight">
+                Building Digital Presence That <span class="text-primary-container">Creates Real Growth.</span>
+</h1>
+<p class="font-body-md text-[15px] text-on-surface-variant/80 max-w-2xl leading-[1.8] font-light">
+                Atomic Media is a full-service digital marketing and creative media agency dedicated to helping brands grow in the digital era. We specialize in combining strategy, creativity, and technology to build powerful digital experiences that drive visibility, engagement, and measurable business results.
+            </p>
+</section>
+<!-- Cinematic Story Timeline -->
+<section class="py-24 border-l border-white/5 ml-2 md:ml-8 pl-8 md:pl-12 relative">
+<div class="absolute w-2 h-2 bg-primary-container rounded-full left-[-4.5px] top-24 shadow-[0_0_10px_rgba(255,106,0,0.6)]"></div>
+<div class="mb-24 glass-panel p-8 md:p-10 glow-hover transition-all duration-500 rounded-lg max-w-3xl">
+<h2 class="font-headline-md text-[28px] text-on-surface mb-4 font-semibold tracking-tight">Strategy &amp; Vision</h2>
+<p class="font-body-md text-[15px] text-on-surface-variant/80 leading-[1.8] font-light">
+                    From digital marketing campaigns and brand identity development to website creation and media production, our team works closely with brands to transform ideas into impactful digital solutions. We don't just execute; we architect.
+                </p>
+</div>
+<div class="absolute w-2 h-2 bg-surface-variant rounded-full left-[-4.5px] top-[calc(100%-96px)]"></div>
+</section>
+<!-- Team Grid (Bento Style) -->
+<section class="py-24">
+<h2 class="font-headline-md text-[28px] text-on-surface mb-12 text-center font-semibold tracking-tight">The Architects</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+<!-- Team Member 1 -->
+<div class="group relative aspect-[3/4] overflow-hidden rounded-lg bg-surface-container/50 border border-white/5">
+<img alt="Team Member" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 group-hover:opacity-70 grayscale opacity-90" data-alt="A cinematic, high-contrast monochrome portrait of a professional male executive in a minimalist studio setting. The lighting is dramatic, casting deep shadows against a pure black background, reflecting a premium, high-tech corporate identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj482S1cQaDDjn5U0t07R4bPe2JdGZlSwRK7PanKg7Z2KE-nHGZdTifz1KvZ4f6hFfYGU7eAyY7xCJEGtgKURI3ERCs-adojTsr1fuaYbgJvjetNxXul5SRwqvtxrhIsbzyAL9Eq6gZDdNx6U20OSxQ4C7Nybdydg6UEkvgTtsHPuENgY5Dpekyfx_z5HKvfKVR4yRkiqYwsKWKVpOhu-84rIme6_YVFM7-ClrCpCxiiqw_VbFx0DFWWBzAtRHE9_ui8MaOI5x7yc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full transform translate-y-3 group-hover:translate-y-0 transition-transform duration-300">
+<div class="h-[1px] w-0 bg-primary-container group-hover:w-full transition-all duration-500 mb-3 shadow-[0_0_8px_rgba(255,106,0,0.6)]"></div>
+<h3 class="font-headline-sm text-[18px] text-on-surface font-semibold">Alex Mercer</h3>
+<p class="font-label-caps text-[10px] text-primary-container mt-1 tracking-[0.2em]">Lead Strategist</p>
+</div>
+</div>
+<!-- Team Member 2 -->
+<div class="group relative aspect-[3/4] overflow-hidden rounded-lg bg-surface-container/50 border border-white/5 mt-0 md:mt-8">
+<img alt="Team Member" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 group-hover:opacity-70 grayscale opacity-90" data-alt="A cinematic, high-contrast monochrome portrait of a professional female executive in a minimalist studio setting. The lighting is dramatic, casting deep shadows against a pure black background, reflecting a premium, high-tech corporate identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5mJ_7qW_VlBdOa99-XoflaNrM4qrfW4GNjPNkmLRPJAWKvOOTuCa28aWBVpRbk-gcoTUdLZCC8Qt3niuyFtFBzjYDKfq8O6R4IfvOHJKwGYBuPQHSO7Jryp8HMqxdHibAPnj9AU2C-kAtDd647_QF-OKwC7cNB1MnZwCWlatVjf2BFF_22xW_uiUIh8j6nIISFz2vxpVHF8bUcvUG7_PqedgSd-98K9Ec1hsYE86hjoSDCA0sApNFzhzaG9Cn8vRh4Kk9JoIjzWM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full transform translate-y-3 group-hover:translate-y-0 transition-transform duration-300">
+<div class="h-[1px] w-0 bg-primary-container group-hover:w-full transition-all duration-500 mb-3 shadow-[0_0_8px_rgba(255,106,0,0.6)]"></div>
+<h3 class="font-headline-sm text-[18px] text-on-surface font-semibold">Sarah Chen</h3>
+<p class="font-label-caps text-[10px] text-primary-container mt-1 tracking-[0.2em]">Creative Director</p>
+</div>
+</div>
+<!-- Team Member 3 -->
+<div class="group relative aspect-[3/4] overflow-hidden rounded-lg bg-surface-container/50 border border-white/5">
+<img alt="Team Member" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 group-hover:opacity-70 grayscale opacity-90" data-alt="A cinematic, high-contrast monochrome portrait of a professional male designer in a minimalist studio setting. The lighting is dramatic, casting deep shadows against a pure black background, reflecting a premium, high-tech corporate identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt2yS87tZWHn4XzM8I0A6-bhZQu1vCd-GhXyUsCShoh5VMb8W096XrzRWtRHkNxoD7aOxlgFh_WRh6BrOlho2mh1t7A7czNY2yAHINaQpSj2XTVfnIt_K31HLyVF--myRZMVGbLyWuC2FHiA2Xbnr19kLK0-KGSWC6kyoCniPi_XjRV50KP8z7QRYI--zr1lXMy08Uv_2DwWjjISyrgQzsFFQICojprFpYURPWiJ5IsTcKsNcAEL8zQ9v32g-D7awlX5VTcbkGg8Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full transform translate-y-3 group-hover:translate-y-0 transition-transform duration-300">
+<div class="h-[1px] w-0 bg-primary-container group-hover:w-full transition-all duration-500 mb-3 shadow-[0_0_8px_rgba(255,106,0,0.6)]"></div>
+<h3 class="font-headline-sm text-[18px] text-on-surface font-semibold">Marcus Vance</h3>
+<p class="font-label-caps text-[10px] text-primary-container mt-1 tracking-[0.2em]">Tech Lead</p>
+</div>
+</div>
+<!-- Team Member 4 -->
+<div class="group relative aspect-[3/4] overflow-hidden rounded-lg bg-surface-container/50 border border-white/5 mt-0 md:mt-8">
+<img alt="Team Member" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 group-hover:opacity-70 grayscale opacity-90" data-alt="A cinematic, high-contrast monochrome portrait of a professional female marketing specialist in a minimalist studio setting. The lighting is dramatic, casting deep shadows against a pure black background, reflecting a premium, high-tech corporate identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWRCvwXnaXI51kVMGIBPNdKktKQ-wVJaNU-o59ERmTswX3quQ4pmsk2cV5mUJCP7GQ2bUsFFp4PUOxwQDLT2XLRpDaTxAquxuJWXeLwuyIF7mZk_vi2bC-k4jM7d6tfFxJK4zTty-1cTKzTut_ZFrztbd0xy2ZawYj68NIMVPtCzBfaCRIyLUeGESiH84OhXxHKtd12ua6tj07JnRmxOJT1_QE04TB4o1J610oEHLbtf6BPXwf8PMwrH3uQ_iXk32Ije5lQk9aYyE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full transform translate-y-3 group-hover:translate-y-0 transition-transform duration-300">
+<div class="h-[1px] w-0 bg-primary-container group-hover:w-full transition-all duration-500 mb-3 shadow-[0_0_8px_rgba(255,106,0,0.6)]"></div>
+<h3 class="font-headline-sm text-[18px] text-on-surface font-semibold">Elena Rostova</h3>
+<p class="font-label-caps text-[10px] text-primary-container mt-1 tracking-[0.2em]">Media Producer</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest/50 backdrop-blur-sm w-full py-10 border-t border-white/5 relative z-20">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto gap-6">
+<div class="font-body-md text-[14px] uppercase tracking-[0.2em] text-primary-container font-bold">
+                ATOMIC MEDIA
+            </div>
+<div class="font-body-md text-[12px] tracking-wider text-on-surface-variant/60 text-center md:text-left font-light">
+                © 2024 ATOMIC MEDIA. CINEMATIC FUTURISM DEFINED.
+            </div>
+<div class="flex gap-6 items-center">
+<a class="font-body-md text-[12px] tracking-wider text-on-surface-variant/80 hover:text-primary-container transition-colors duration-300 cursor-pointer" href="#">Privacy Policy</a>
+<a class="font-body-md text-[12px] tracking-wider text-on-surface-variant/80 hover:text-primary-container transition-colors duration-300 cursor-pointer" href="#">Terms of Service</a>
+<a class="font-body-md text-[12px] tracking-wider text-on-surface-variant/80 hover:text-primary-container transition-colors duration-300 cursor-pointer" href="#">Careers</a>
+<a class="font-body-md text-[12px] tracking-wider text-on-surface-variant/80 hover:text-primary-container transition-colors duration-300 cursor-pointer" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+</body></html>
