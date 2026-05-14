@@ -124,28 +124,41 @@
 <body class="antialiased bg-black min-h-screen">
     <!-- TopNavBar -->
     <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-[25px] border-b border-white/10 shadow-[0_0_30px_rgba(255,106,0,0.1)] transition-all duration-300 ease-out active:scale-95">
-        <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto">
-            <div class="flex items-center gap-4">
-                <img alt="ATOMIC MEDIA Logo" class="h-10 w-auto opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeGA3D5vahEXhDmOVICpWQKEi1jVxnou-QvnxTw3HK7xyK8gwoFYBEqyqYppMGKrdDj5EH84RhaYNb2mXyGdpK9W3HnSp1f6SVxdIz1mj89JX4kEx-R64qEXWqNK2HDEaTStI1qU7Zw6cYBOUkqxfe16J9NR0Rs_Ya-LPdOIT4B9xOiER9Tx8vNz4h_nQakzXijSw3rWIwP-ziRDEh-IGz4SVDU56YlnxquIh22vjX01TGljNiZh51nKFQC-SiGrUt4yq-ZcgRQJk"/>
-               <span  class="font-headline-sm text-lg text-white font-extrabold tracking-tighter uppercase">
-    Atomic Media<span class="text-primary-container">.</span>
-</span>
-            </div>
+    <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto">
+
+        <!-- LEFT SIDE -->
+        <div class="flex items-center gap-4">
+            <img alt="ATOMIC MEDIA Logo" class="h-10 w-auto opacity-100" 
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeGA3D5vahEXhDmOVICpWQKEi1jVxnou-QvnxTw3HK7xyK8gwoFYBEqyqYppMGKrdDj5EH84RhaYNb2mXyGdpK9W3HnSp1f6SVxdIz1mj89JX4kEx-R64qEXWqNK2HDEaTStI1qU7Zw6cYBOUkqxfe16J9NR0Rs_Ya-LPdOIT4B9xOiER9Tx8vNz4h_nQakzXijSw3rWIwP-ziRDEh-IGz4SVDU56YlnxquIh22vjX01TGljNiZh51nKFQC-SiGrUt4yq-ZcgRQJk" />
+            <span class="font-headline-sm text-lg text-white font-extrabold tracking-tighter uppercase">
+                Atomic Media<span class="text-primary-container">.</span>
+            </span>
+        </div>
+
+        <!-- RIGHT SIDE (GROUPED) -->
+        <div class="flex items-center gap-8">
+
+            <!-- Desktop Links -->
             <div class="hidden md:flex items-center gap-8 font-label-caps text-sm uppercase tracking-widest">
                 <a class="text-primary-container border-b-2 border-primary-container pb-1 hover:drop-shadow-[0_0_15px_rgba(255,178,148,0.6)]" href="index.html">Home</a>
                 <a class="text-gray-400 hover:text-white transition-colors duration-500 hover:drop-shadow-[0_0_15px_rgba(255,178,148,0.6)]" href="about.html">About</a>
                 <a class="text-gray-400 hover:text-white transition-colors duration-500 hover:drop-shadow-[0_0_15px_rgba(255,178,148,0.6)]" href="services.html">Services</a>
                 <a class="text-gray-400 hover:text-white transition-colors duration-500 hover:drop-shadow-[0_0_15px_rgba(255,178,148,0.6)]" href="contact.html">Contact</a>
             </div>
+
+            <!-- Desktop CTA -->
             <button class="hidden md:inline-flex items-center justify-center px-6 py-2.5 bg-primary-container text-black font-label-caps text-xs uppercase glow-button rounded font-bold">
                 START PROJECT
             </button>
-            <!-- Mobile Menu Icon Placeholder -->
+
+            <!-- Mobile Menu -->
             <button class="md:hidden text-primary-container">
                 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu</span>
             </button>
+
         </div>
-    </nav>
+    </div>
+</nav>
 
     <main>
         <!-- Hero Section -->
